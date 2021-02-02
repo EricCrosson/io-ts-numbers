@@ -1,6 +1,6 @@
 {
     "name": "io-ts-numbers",
-    "version": "0.0.1",
+    "version": "1.0.0",
     "description": "io-ts library for numbers",
     "homepage": "https://github.com/EricCrosson/io-ts-numbers",
     "bugs": {
