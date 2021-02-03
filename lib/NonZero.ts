@@ -9,7 +9,7 @@ import { Positive } from './Positive'
 /**
  * @since 0.0.1
  */
-export const NonZzero = t.union([Negative, Positive])
+export const NonZero = t.union([Negative, Positive])
 
 /**
  * @since 0.0.1
