@@ -3,13 +3,13 @@
  */
 
 import * as t from 'io-ts'
-import { Positive } from './Positive'
 import { Finite } from './Finite'
+import { NonNegative } from './NonNegative'
 
 /**
  * @since 0.0.1
  */
-export const Natural = t.intersection([t.Int, Positive, Finite])
+export const Natural = t.intersection([t.Int, NonNegative, Finite])
 
 /**
  * @since 0.0.1

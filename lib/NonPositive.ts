@@ -3,22 +3,13 @@
  */
 
 import * as t from 'io-ts'
+import { Negative } from './Negative'
+import { Zero } from './Zero'
 
 /**
  * @since 0.0.1
  */
-export interface NonPositiveBrand {
-    readonly NonPositive: unique symbol
-}
-
-/**
- * @since 0.0.1
- */
-export const NonPositive = t.brand(
-    t.number,
-    (n): n is t.Branded<number, NonPositiveBrand> => n <= 0,
-    'NonPositive'
-)
+export const NonPositive = t.union([Negative, Zero])
 
 /**
  * @since 0.0.1
